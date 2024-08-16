@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'upload-to-codegpt-agent'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=upload-to-codegpt-agent",
+                    "--package=upload-to-codegpt-agent"
+                ],
+                "filter": {
+                    "name": "upload-to-codegpt-agent",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'upload-to-codegpt-agent'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=upload-to-codegpt-agent",
+                    "--package=upload-to-codegpt-agent"
+                ],
+                "filter": {
+                    "name": "upload-to-codegpt-agent",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

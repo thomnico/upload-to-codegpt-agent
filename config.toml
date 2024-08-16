@@ -1,0 +1,8 @@
+directories = [
+    "/Users/nicolasthomas/inkan/ykpiv_desktop/",
+    "/Users/nicolasthomas/inkan/sealfie/"
+]
+
+file_types = [
+    "dart", "c", "cpp", "h",  "js", "ts", "py",  "kt", "rs"
+]
